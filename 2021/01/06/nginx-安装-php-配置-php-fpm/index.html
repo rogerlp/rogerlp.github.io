@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2020 | Biketopro</title>
+  <title>nginx 安装 php 配置 php-fpm | Biketopro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Biketopro">
-<meta property="og:url" content="http://example.com/archives/2020/index.html">
+  <meta name="description" content="安装php:  1sudo yum install php php-fpm    启动php-fpm:  1sudo systemctl start php-fpm   设置自动启动：  1sudo systemctl enable php-fpm   参考连接https:&#x2F;&#x2F;www.cnblogs.com&#x2F;donghui521&#x2F;p&#x2F;10334776.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginx 安装 php 配置 php-fpm">
+<meta property="og:url" content="http://example.com/2021/01/06/nginx-%E5%AE%89%E8%A3%85-php-%E9%85%8D%E7%BD%AE-php-fpm/index.html">
 <meta property="og:site_name" content="Biketopro">
+<meta property="og:description" content="安装php:  1sudo yum install php php-fpm    启动php-fpm:  1sudo systemctl start php-fpm   设置自动启动：  1sudo systemctl enable php-fpm   参考连接https:&#x2F;&#x2F;www.cnblogs.com&#x2F;donghui521&#x2F;p&#x2F;10334776.html">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-06T10:12:40.000Z">
+<meta property="article:modified_time" content="2021-01-06T10:15:33.007Z">
 <meta property="article:author" content="Roger@biketopro.com">
 <meta name="twitter:card" content="summary">
   
@@ -69,77 +73,70 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/22/%E5%9C%A8public%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E9%9D%A2%EF%BC%8C%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAgit%EF%BC%8C%E7%84%B6%E5%90%8E%E6%8E%A8%E9%80%81%E5%88%B0gitpage/" class="archive-article-date">
-  <time class="dt-published" datetime="2020-12-22T15:39:10.000Z" itemprop="datePublished">Dec 22</time>
+        <section id="main"><article id="post-nginx-安装-php-配置-php-fpm" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/01/06/nginx-%E5%AE%89%E8%A3%85-php-%E9%85%8D%E7%BD%AE-php-fpm/" class="article-date">
+  <time class="dt-published" datetime="2021-01-06T10:12:40.000Z" itemprop="datePublished">2021-01-06</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/22/%E5%9C%A8public%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E9%9D%A2%EF%BC%8C%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAgit%EF%BC%8C%E7%84%B6%E5%90%8E%E6%8E%A8%E9%80%81%E5%88%B0gitpage/">在public文件夹里面，建立一个git，然后推送到gitpage</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      nginx 安装 php 配置 php-fpm
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/22/%E5%AE%89%E8%A3%85hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E8%BF%87%E7%A8%8B/" class="archive-article-date">
-  <time class="dt-published" datetime="2020-12-22T15:16:00.000Z" itemprop="datePublished">Dec 22</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/22/%E5%AE%89%E8%A3%85hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E8%BF%87%E7%A8%8B/">安装hexo的一些过程</a>
-    </h1>
-  
+        <ul>
+<li>安装php:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install php php-fpm </span><br></pre></td></tr></table></figure>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/17/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2020-12-17T08:42:53.000Z" itemprop="datePublished">Dec 17</time>
-</a>
+<ul>
+<li>启动php-fpm:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start php-fpm</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>设置自动启动：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable php-fpm</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>参考连接<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/donghui521/p/10334776.html">https://www.cnblogs.com/donghui521/p/10334776.html</a></li>
+</ul>
+
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/17/hello-world/">centos安装一个基于hexo的博客，并开机自动运行，部署到gitpage</a>
-    </h1>
-  
-
-    </header>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/01/06/nginx-%E5%AE%89%E8%A3%85-php-%E9%85%8D%E7%BD%AE-php-fpm/" data-id="ckjl9ot3u0000lky488l0gubu" data-title="nginx 安装 php 配置 php-fpm" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/12/22/%E5%9C%A8public%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E9%9D%A2%EF%BC%8C%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAgit%EF%BC%8C%E7%84%B6%E5%90%8E%E6%8E%A8%E9%80%81%E5%88%B0gitpage/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">在public文件夹里面，建立一个git，然后推送到gitpage</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
