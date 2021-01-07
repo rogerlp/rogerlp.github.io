@@ -6,15 +6,15 @@
   
   <title>nginx 安装 php 配置 php-fpm | Biketopro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="安装php:  1sudo yum install php php-fpm    启动php-fpm:  1sudo systemctl start php-fpm   设置自动启动：  1sudo systemctl enable php-fpm   参考连接https:&#x2F;&#x2F;www.cnblogs.com&#x2F;donghui521&#x2F;p&#x2F;10334776.html">
+  <meta name="description" content="安装php:  1sudo yum install php php-fpm    启动php-fpm:  1sudo systemctl start php-fpm   设置自动启动：  1sudo systemctl enable php-fpm  1234567location ~ \.php?.*$ &amp;#123;    root &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html;    fast">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nginx 安装 php 配置 php-fpm">
 <meta property="og:url" content="http://example.com/2021/01/06/nginx-%E5%AE%89%E8%A3%85-php-%E9%85%8D%E7%BD%AE-php-fpm/index.html">
 <meta property="og:site_name" content="Biketopro">
-<meta property="og:description" content="安装php:  1sudo yum install php php-fpm    启动php-fpm:  1sudo systemctl start php-fpm   设置自动启动：  1sudo systemctl enable php-fpm   参考连接https:&#x2F;&#x2F;www.cnblogs.com&#x2F;donghui521&#x2F;p&#x2F;10334776.html">
+<meta property="og:description" content="安装php:  1sudo yum install php php-fpm    启动php-fpm:  1sudo systemctl start php-fpm   设置自动启动：  1sudo systemctl enable php-fpm  1234567location ~ \.php?.*$ &amp;#123;    root &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html;    fast">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-06T10:12:40.000Z">
-<meta property="article:modified_time" content="2021-01-06T10:15:33.007Z">
+<meta property="article:modified_time" content="2021-01-07T01:54:12.284Z">
 <meta property="article:author" content="Roger@biketopro.com">
 <meta name="twitter:card" content="summary">
   
@@ -109,6 +109,8 @@
 <li>设置自动启动：</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable php-fpm</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">location ~ \.php?.*$ &#123;</span><br><span class="line">    root /usr/share/nginx/html;</span><br><span class="line">    fastcgi_pass 127.0.0.1:9000;</span><br><span class="line">    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;</span><br><span class="line">    include fastcgi_params;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>参考连接<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/donghui521/p/10334776.html">https://www.cnblogs.com/donghui521/p/10334776.html</a></li>
