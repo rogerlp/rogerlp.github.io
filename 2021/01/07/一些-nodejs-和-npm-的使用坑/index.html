@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>nginx 安装 php 配置 php-fpm | Biketopro</title>
+  <title>一些 nodejs 和 npm 的使用坑 | Biketopro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="安装php:  1sudo yum install php php-fpm    启动php-fpm:  1sudo systemctl start php-fpm   设置自动启动：  1sudo systemctl enable php-fpm  1234567location ~ \.php?.*$ &amp;#123;    root &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html;    fast">
+  <meta name="description" content="npm 缓存清理  1npm clean cache —force   gitbook 的使用  1234gitbook initgitbook servegitbook install .&#x2F;gitbook build  nvm 一个 node 的版本切换器 可以将nvm中node和那npm设置到国内源,在nvm的安装路径下找到settings.txt(如果没有，可新建一个)打开:添加">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nginx 安装 php 配置 php-fpm">
-<meta property="og:url" content="http://example.com/2021/01/06/nginx-%E5%AE%89%E8%A3%85-php-%E9%85%8D%E7%BD%AE-php-fpm/index.html">
+<meta property="og:title" content="一些 nodejs 和 npm 的使用坑">
+<meta property="og:url" content="http://example.com/2021/01/07/%E4%B8%80%E4%BA%9B-nodejs-%E5%92%8C-npm-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9D%91/index.html">
 <meta property="og:site_name" content="Biketopro">
-<meta property="og:description" content="安装php:  1sudo yum install php php-fpm    启动php-fpm:  1sudo systemctl start php-fpm   设置自动启动：  1sudo systemctl enable php-fpm  1234567location ~ \.php?.*$ &amp;#123;    root &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html;    fast">
+<meta property="og:description" content="npm 缓存清理  1npm clean cache —force   gitbook 的使用  1234gitbook initgitbook servegitbook install .&#x2F;gitbook build  nvm 一个 node 的版本切换器 可以将nvm中node和那npm设置到国内源,在nvm的安装路径下找到settings.txt(如果没有，可新建一个)打开:添加">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-06T10:12:40.000Z">
-<meta property="article:modified_time" content="2021-01-07T01:54:12.284Z">
+<meta property="article:published_time" content="2021-01-07T04:02:49.000Z">
+<meta property="article:modified_time" content="2021-01-26T07:23:38.927Z">
 <meta property="article:author" content="Roger@biketopro.com">
 <meta name="twitter:card" content="summary">
   
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-nginx-安装-php-配置-php-fpm" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-一些-nodejs-和-npm-的使用坑" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/01/06/nginx-%E5%AE%89%E8%A3%85-php-%E9%85%8D%E7%BD%AE-php-fpm/" class="article-date">
-  <time class="dt-published" datetime="2021-01-06T10:12:40.000Z" itemprop="datePublished">2021-01-06</time>
+    <a href="/2021/01/07/%E4%B8%80%E4%BA%9B-nodejs-%E5%92%8C-npm-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9D%91/" class="article-date">
+  <time class="dt-published" datetime="2021-01-07T04:02:49.000Z" itemprop="datePublished">2021-01-07</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      nginx 安装 php 配置 php-fpm
+      一些 nodejs 和 npm 的使用坑
     </h1>
   
 
@@ -96,30 +96,30 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <ul>
-<li>安装php:</li>
+<li>npm 缓存清理</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install php php-fpm </span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm clean cache —force</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>启动php-fpm:</li>
+<li>gitbook 的使用</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start php-fpm</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gitbook init</span><br><span class="line">gitbook serve</span><br><span class="line">gitbook install .&#x2F;</span><br><span class="line">gitbook build</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>设置自动启动：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable php-fpm</span><br></pre></td></tr></table></figure>
+<p>nvm 一个 node 的版本切换器</p>
+<p>可以将nvm中node和那npm设置到国内源,在nvm的安装路径下找到settings.txt(如果没有，可新建一个)打开:添加一下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node_mirror:npm.taobao.org&#x2F;mirrors&#x2F;node&#x2F;</span><br><span class="line">npm_mirror:npm.taobao.org&#x2F;mirrors&#x2F;npm&#x2F; </span><br></pre></td></tr></table></figure>
 
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">location ~ \.php?.*$ &#123;</span><br><span class="line">    root /usr/share/nginx/html;</span><br><span class="line">    fastcgi_pass 127.0.0.1:9000;</span><br><span class="line">    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;</span><br><span class="line">    include fastcgi_params;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>切换到淘宝的源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry http:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>参考连接<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/donghui521/p/10334776.html">https://www.cnblogs.com/donghui521/p/10334776.html</a></li>
-</ul>
+<p>执行以下命令：set-ExecutionPolicy RemoteSigned 回车</p>
+<p>或者，在setting文件&lt;通过 nvm root 可以查到路径&gt;中，添加如下两行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node_mirror: https:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;node&#x2F;</span><br><span class="line">npm_mirror: https:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;npm&#x2F;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/01/06/nginx-%E5%AE%89%E8%A3%85-php-%E9%85%8D%E7%BD%AE-php-fpm/" data-id="ckjl9ot3u0000lky488l0gubu" data-title="nginx 安装 php 配置 php-fpm" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/01/07/%E4%B8%80%E4%BA%9B-nodejs-%E5%92%8C-npm-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9D%91/" data-id="ckkdp03gp0000i6y480p9dusp" data-title="一些 nodejs 和 npm 的使用坑" class="article-share-link">Share</a>
       
       
       
@@ -129,19 +129,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/01/07/%E4%B8%80%E4%BA%9B-nodejs-%E5%92%8C-npm-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9D%91/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          一些 nodejs 和 npm 的使用坑
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/12/22/%E5%9C%A8public%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E9%9D%A2%EF%BC%8C%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAgit%EF%BC%8C%E7%84%B6%E5%90%8E%E6%8E%A8%E9%80%81%E5%88%B0gitpage/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/01/06/nginx-%E5%AE%89%E8%A3%85-php-%E9%85%8D%E7%BD%AE-php-fpm/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">在public文件夹里面，建立一个git，然后推送到gitpage</div>
+      <div class="article-nav-title">nginx 安装 php 配置 php-fpm</div>
     </a>
   
 </nav>
